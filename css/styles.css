@@ -334,10 +334,47 @@ button {
 }
 
 .members-description {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.187;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+/* socials block */
+
+.members-socials {
+  display: flex;
+  width: 230px;
+  padding-left: 32px;
+  justify-content: space-between;
+}
+
+.members-social {
+  border-radius: 50%;
+}
+
+.members-social-link {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.network {
+  fill: #afb1b8;
+}
+
+.members-social:hover,
+.members-social:focus {
+  background-color: #2196f3;
+}
+
+.members-social:hover .network, 
+.members-social:focus .network {
+fill: #ffffff;
 }
 
 /* Футер */
