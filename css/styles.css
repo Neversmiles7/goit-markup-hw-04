@@ -1,0 +1,495 @@
+/* Общее */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #757575;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Логотип */
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.accent {
+  color: #2196f3;
+}
+
+/* Навигация */
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  margin-left: 93px;
+  margin-right: 331px;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #2196f3;
+}
+
+/* Контакты */
+
+.header-mail {
+  margin-right: 50px;
+}
+
+.header-contacts {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.header-contacts:hover,
+.header-contacts:focus {
+  color: #2196f3;
+}
+
+/* Герой */
+
+.hero {
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: #2f303a;
+}
+.business {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  width: 696px;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-button {
+  display: block;
+  min-width: 200px;
+  padding: 10px 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+
+  cursor: pointer;
+}
+
+/* Преимущества */
+
+.advantage {
+  padding-top: 94px;
+
+  background-color: #ffffff;
+}
+
+.advantage-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantage-item {
+  width: 270px;
+}
+
+.advantage-name {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.advantage-description {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+/* Чем мы занимаемся */
+
+.job {
+  background-color: #ffffff;
+}
+
+.job-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+/* Наша команда */
+
+.our-team {
+  background-color: #f5f4fa;
+}
+
+.our-team-title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.members {
+  display: flex;
+  justify-content: space-between;
+}
+
+.members-item {
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: #ffffff;
+}
+.members-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.members-title {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.members-description {
+  font-size: 16px;
+  line-height: 1.187;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* Футер */
+
+.footer {
+  max-width: 1600px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #2f303a;
+}
+
+.footer-container {
+  width: 1200px;
+
+  flex-direction: column;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.address-item:nth-child(1) .address-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.address-item:not(:first-child) .address-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-item:nth-child(-n + 2) {
+  margin-bottom: 9px;
+}
+
+/* ПОРТФОЛИО */
+
+.portfolio-button {
+  max-width: 150px;
+  padding: 6px 22px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+
+  border-radius: 4px;
+  border: transparent;
+
+  background-color: #f5f4fa;
+
+  cursor: pointer;
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-item:nth-child(-n + 4) {
+  margin-right: 8px;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.subject {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.subject-item {
+  width: 370px;
+  margin: 15px;
+}
+
+.subject-title {
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.subject-description {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.subject-border {
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* FILTER */
+
+input[type="radio"] {
+  display: none;
+}
+
+.filter {
+  display: block;
+  max-width: 150px;
+  padding: 6px 22px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+
+  border-radius: 4px;
+  border: transparent;
+
+  background-color: #f5f4fa;
+
+  cursor: pointer;
+}
+
+.filter:hover,
+.filter:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.label-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.label-filter:nth-child(-n + 4) {
+  margin-right: 8px;
+}
+
+[value="all"]:checked ~ .label-list [for="all"],
+[value="web"]:checked ~ .label-list [for="web"],
+[value="app"]:checked ~ .label-list [for="app"],
+[value="dis"]:checked ~ .label-list [for="dis"],
+[value="mar"]:checked ~ .label-list [for="mar"] {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+[value="all"]:checked ~ .subject > .subject-item:not([class~="all"]) {
+  display: block;
+}
+
+[value="web"]:checked ~ .subject > .subject-item:not([class~="web"]),
+[value="app"]:checked ~ .subject > .subject-item:not([class~="app"]),
+[value="dis"]:checked ~ .subject > .subject-item:not([class~="dis"]),
+[value="mar"]:checked ~ .subject > .subject-item:not([class~="mar"]) {
+  display: none;
+}
