@@ -352,10 +352,6 @@ button {
   justify-content: space-between;
 }
 
-.members-social {
-  border-radius: 50%;
-}
-
 .members-social-link {
   width: 44px;
   height: 44px;
@@ -363,18 +359,14 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.network {
+
   fill: #afb1b8;
+  border-radius: 50%;
 }
 
-.members-social:hover,
-.members-social:focus {
+.members-social-link:hover,
+.members-social-link:focus {
   background-color: #2196f3;
-}
-
-.members-social:hover .network,
-.members-social:focus .network {
   fill: #ffffff;
 }
 
@@ -395,21 +387,23 @@ button {
   justify-content: space-between;
 }
 
-.clients-subject {
+.clients-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 170px;
   height: 92px;
 
+  fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-.clients-link {
-  display: flex;
+.clients-link:hover,
+.clients-link:focus {
+  fill: #2196f3;
+  border-color: #2196f3;
 }
-
 /* Футер */
 
 .footer {
@@ -421,10 +415,9 @@ button {
   background-color: #2f303a;
 }
 
-.footer-container {
+.footer-wrapper {
   width: 1200px;
 
-  flex-direction: column;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -463,6 +456,50 @@ button {
 
 .address-item:nth-child(-n + 2) {
   margin-bottom: 9px;
+}
+
+/* футер соцсети */
+.footer-wrapper {
+  display: flex;
+}
+.footer-socials {
+  width: 206px;
+  margin-left: 70px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-socials-title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.footer-socials-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #2196f3;
 }
 
 /* ПОРТФОЛИО */
