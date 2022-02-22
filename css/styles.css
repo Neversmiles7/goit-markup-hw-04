@@ -320,7 +320,7 @@ button {
 }
 .members-info {
   padding-top: 30px;
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .members-title {
@@ -346,6 +346,7 @@ button {
 
 .members-socials {
   display: flex;
+  padding-bottom: 30px;
   width: 230px;
   padding-left: 32px;
   justify-content: space-between;
@@ -372,9 +373,40 @@ button {
   background-color: #2196f3;
 }
 
-.members-social:hover .network, 
+.members-social:hover .network,
 .members-social:focus .network {
-fill: #ffffff;
+  fill: #ffffff;
+}
+
+/* Постоянные клиенты */
+
+.clients-title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-subject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-link {
+  display: flex;
 }
 
 /* Футер */
