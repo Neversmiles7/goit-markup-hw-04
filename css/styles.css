@@ -578,7 +578,7 @@ button {
 }
 
 /* FILTER */
-
+/* 
 input[type="radio"] {
   display: none;
 }
@@ -639,4 +639,4 @@ input[type="radio"] {
 [value="dis"]:checked ~ .subject > .subject-item:not([class~="dis"]),
 [value="mar"]:checked ~ .subject > .subject-item:not([class~="mar"]) {
   display: none;
-}
+} */
